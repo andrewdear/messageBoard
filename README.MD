@@ -33,3 +33,6 @@ More advanced and generic error handling
 
 Write more comprehensive unit tests, that work without a server running
 
+### Additional Info
+
+If you have postman I have added a collection with the endpoints for you.
