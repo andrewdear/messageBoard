@@ -1,6 +1,6 @@
 FROM node:12.19.0
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/dist
 
 COPY package.json ./
 
@@ -12,8 +12,7 @@ COPY . .
 
 RUN npm run build
 
-COPY ./dist .
 
 EXPOSE 8080
 
-CMD ["pm2-runtime","index.js"]
+CMD ["pm2-runtime","dist/index.js"]
